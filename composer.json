@@ -1,7 +1,7 @@
 {
     "name": "sunil/laramono",
-    "description": "descrioptn",
-    "licence": "MIT",
+    "description": "the laravel monorepo demo",
+    "license": "MIT",
     "authors": [
         {
             "name": "Sunil Prajapati",
