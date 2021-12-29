@@ -1,0 +1,13 @@
+name: 'Packages Split'
+
+on:
+  push:
+    branches:
+      - master
+    tags:
+      - '*'
+
+env:
+  # 1. for Github split
+  GITHUB_TOKEN: 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
+

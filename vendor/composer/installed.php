@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '3367c84da49529581d6dc50aad8da7a043837653',
+        'reference' => '40f31e3a77e4deb0f8a2d96856fe3875991788d4',
         'name' => 'sunil/laramono',
         'dev' => true,
     ),
@@ -343,7 +343,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '3367c84da49529581d6dc50aad8da7a043837653',
+            'reference' => '40f31e3a77e4deb0f8a2d96856fe3875991788d4',
             'dev_requirement' => false,
         ),
         'symfony/dependency-injection' => array(
@@ -514,13 +514,13 @@
         'your-monorepo/first-package' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => 'dev-master',
+                0 => '0.1.0',
             ),
         ),
         'your-monorepo/second-package' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => 'dev-master',
+                0 => '0.1.0',
             ),
         ),
     ),
