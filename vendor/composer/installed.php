@@ -1,11 +1,11 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => 'dev-master',
-        'version' => 'dev-master',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '40f31e3a77e4deb0f8a2d96856fe3875991788d4',
+        'reference' => '9aad9fe458f221d9e8cf194d1a08d593d86e1cfb',
         'name' => 'sunil/laramono',
         'dev' => true,
     ),
@@ -338,12 +338,12 @@
             'dev_requirement' => true,
         ),
         'sunil/laramono' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '40f31e3a77e4deb0f8a2d96856fe3875991788d4',
+            'reference' => '9aad9fe458f221d9e8cf194d1a08d593d86e1cfb',
             'dev_requirement' => false,
         ),
         'symfony/dependency-injection' => array(
@@ -514,13 +514,13 @@
         'your-monorepo/first-package' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => '0.1.0',
+                0 => '0.1.2',
             ),
         ),
         'your-monorepo/second-package' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => '0.1.0',
+                0 => '0.1.2',
             ),
         ),
     ),
