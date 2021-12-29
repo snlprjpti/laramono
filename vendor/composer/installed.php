@@ -1,11 +1,11 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => 'dev-main',
-        'version' => 'dev-main',
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '9aad9fe458f221d9e8cf194d1a08d593d86e1cfb',
+        'reference' => '78c7df6b96f905b800aeb90acff07cde65136709',
         'name' => 'sunil/laramono',
         'dev' => true,
     ),
@@ -338,12 +338,12 @@
             'dev_requirement' => true,
         ),
         'sunil/laramono' => array(
-            'pretty_version' => 'dev-main',
-            'version' => 'dev-main',
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '9aad9fe458f221d9e8cf194d1a08d593d86e1cfb',
+            'reference' => '78c7df6b96f905b800aeb90acff07cde65136709',
             'dev_requirement' => false,
         ),
         'symfony/dependency-injection' => array(
