@@ -21,7 +21,7 @@ final class ConfigFactory
     /**
      * @var string
      */
-    private const DEFAULT_BRANCH = 'main';
+    private const DEFAULT_BRANCH = 'master';
 
     /**
      * @todo verify
