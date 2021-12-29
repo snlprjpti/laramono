@@ -21,8 +21,8 @@ try {
 setupGitCredentials($config);
 
 
-$cloneDirectory = sys_get_temp_dir() . '/monorepo_split/clone_directory';
-$buildDirectory = sys_get_temp_dir() . '/monorepo_split/build_directory';
+$cloneDirectory = sys_get_temp_dir() . '/new_split/clone_directory';
+$buildDirectory = sys_get_temp_dir() . '/new_split/build_directory';
 
 $hostRepositoryOrganizationName = $config->getGitRepository();
 
