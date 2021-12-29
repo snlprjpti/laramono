@@ -23,7 +23,7 @@
         "symplify/monorepo-builder": "^10.0"
     },
     "replace": {
-        "your-monorepo/first-package": "0.1.1",
-        "your-monorepo/second-package": "0.1.1"
+        "your-monorepo/first-package": "0.1.2",
+        "your-monorepo/second-package": "0.1.2"
     }
 }
