@@ -1,0 +1,29 @@
+{
+    "name": "sunil/laramono",
+    "authors": [
+        {
+            "name": "Sunil Prajapati",
+            "email": "sunil.prajapati@hazesoft.co"
+        }
+    ],
+    "require": {
+        "php": "^8.0.8",
+        "symfony/dependency-injection": "^5.0",
+        "symfony/http-kernel": "^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sunil\\Laramono\\": "src/",
+            "YourMonorepo\\FirstPackage\\": "packages/first-package/src",
+            "YourMonorepo\\SecondPackage\\": "packages/second-package/src"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "symplify/monorepo-builder": "^10.0"
+    },
+    "replace": {
+        "your-monorepo/first-package": "17.0.1",
+        "your-monorepo/second-package": "17.0.1"
+    }
+}

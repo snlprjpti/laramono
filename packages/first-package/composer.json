@@ -1,0 +1,11 @@
+{
+    "name": "your-monorepo/first-package",
+    "require": {
+        "php": "^8.0.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "YourMonorepo\\FirstPackage\\": "src"
+        }
+    }
+}
