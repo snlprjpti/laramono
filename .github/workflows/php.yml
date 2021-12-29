@@ -1,68 +1,36 @@
-name: 'Packages Split'
+name: PHP Composer
 
 on:
   push:
-    branches:
-      - main
-    tags:
-      - '*'
-
-env:
-  # 1. for Github split
-  GITHUB_TOKEN: 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
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
 jobs:
-  packages_split:
+  build:
+
     runs-on: ubuntu-latest
 
-    strategy:
-      fail-fast: false
-      matrix:
-        # define package to repository map
-        package:
-          -
-            local_path: 'easy-coding-standard'
-            split_repository: 'easy-coding-standard'
-
     steps:
-      -   uses: actions/checkout@v2
+    - uses: actions/checkout@v2
 
-      # no tag
-      -
-        if: "!startsWith(github.ref, 'refs/tags/')"
-        uses: "symplify/monorepo-split-github-action@2.1"
-        with:
-          # ↓ split "packages/easy-coding-standard" directory
-          package_directory: 'packages/${{ matrix.package.local_path }}'
+    - name: Validate composer.json and composer.lock
+      run: composer validate --strict
 
-          # ↓ into https://github.com/symplify/easy-coding-standard repository
-          repository_organization: 'symplify'
-          repository_name: '${{ matrix.package.split_repository }}'
+    - name: Cache Composer packages
+      id: composer-cache
+      uses: actions/cache@v2
+      with:
+        path: vendor
+        key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-php-
 
-          # [optional, with "github.com" as default]
-          repository_host: git.private.com:1234
+    - name: Install dependencies
+      run: composer install --prefer-dist --no-progress
 
-          # ↓ the user signed under the split commit
-          user_name: "kaizen-ci"
-          user_email: "info@kaizen-ci.org"
+    # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
+    # Docs: https://getcomposer.org/doc/articles/scripts.md
 
-      # with tag
-      -
-        if: "startsWith(github.ref, 'refs/tags/')"
-        uses: "symplify/monorepo-split-github-action@2.1"
-        with:
-          tag: ${GITHUB_REF#refs/tags/}
-
-          # ↓ split "packages/easy-coding-standard" directory
-          package_directory: 'packages/${{ matrix.package.local_path }}'
-
-          # ↓ into https://github.com/symplify/easy-coding-standard repository
-          repository_organization: 'symplify'
-          repository_name: '${{ matrix.package.split_repository }}'
-
-          # [optional, with "github.com" as default]
-          repository_host: git.private.com:1234
-
-          # ↓ the user signed under the split commit
-          user_name: "kaizen-ci"
-          user_email: "info@kaizen-ci.org"
+    # - name: Run test suite
+    #   run: composer run-script test
