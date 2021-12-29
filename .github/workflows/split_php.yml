@@ -27,7 +27,7 @@ jobs:
         # see https://github.community/t/self-reference-an-action-for-testing/17891
         uses: "./"
         env:
-          GITHUB_TOKEN: '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'
+          GITHUB_TOKEN: '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a'
         with:
           package_directory: 'packages/first-package'
           repository_organization: 'snlprjti'
