@@ -29,5 +29,5 @@ jobs:
           repository_name: 'new_split'
 
           # change to use that should be signed under the split commit
-          user_name: 'snlprjti'
+          Username: 'snlprjti'
           user_email: 'sl.prjpti@gmail.com'
