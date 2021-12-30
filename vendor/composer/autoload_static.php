@@ -22,7 +22,6 @@ class ComposerStaticInitaf990ac272bcc4655fad9630e49dc26d
         'p' => 
         array (
             'phpDocumentor\\Reflection\\' => 25,
-            'packages\\first-package\\' => 23,
         ),
         'W' => 
         array (
@@ -43,19 +42,28 @@ class ComposerStaticInitaf990ac272bcc4655fad9630e49dc26d
             'Symfony\\Component\\EventDispatcher\\' => 34,
             'Symfony\\Component\\ErrorHandler\\' => 31,
             'Symfony\\Component\\DependencyInjection\\' => 38,
-            'Sunil\\Laramono\\' => 15,
         ),
         'P' => 
         array (
             'Psr\\Log\\' => 8,
             'Psr\\EventDispatcher\\' => 20,
             'Psr\\Container\\' => 14,
+            'Psr\\Cache\\' => 10,
             'Prophecy\\' => 9,
             'PhpParser\\' => 10,
+            'PackageVersions\\' => 16,
+        ),
+        'M' => 
+        array (
+            'Modules\\attribute\\' => 18,
         ),
         'D' => 
         array (
             'Doctrine\\Instantiator\\' => 22,
+            'Doctrine\\Deprecations\\' => 22,
+            'Doctrine\\DBAL\\' => 14,
+            'Doctrine\\Common\\Cache\\' => 22,
+            'Doctrine\\Common\\' => 16,
             'DeepCopy\\' => 9,
         ),
     );
@@ -66,10 +74,6 @@ class ComposerStaticInitaf990ac272bcc4655fad9630e49dc26d
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
             1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
             2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
-        ),
-        'packages\\first-package\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/packages/first-package/src',
         ),
         'Webmozart\\Assert\\' => 
         array (
@@ -127,10 +131,6 @@ class ComposerStaticInitaf990ac272bcc4655fad9630e49dc26d
         array (
             0 => __DIR__ . '/..' . '/symfony/dependency-injection',
         ),
-        'Sunil\\Laramono\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
-        ),
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/src',
@@ -143,6 +143,10 @@ class ComposerStaticInitaf990ac272bcc4655fad9630e49dc26d
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
         ),
+        'Psr\\Cache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/cache/src',
+        ),
         'Prophecy\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy',
@@ -151,9 +155,33 @@ class ComposerStaticInitaf990ac272bcc4655fad9630e49dc26d
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
         ),
+        'PackageVersions\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/composer/package-versions-deprecated/src/PackageVersions',
+        ),
+        'Modules\\attribute\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Modules/attribute',
+        ),
         'Doctrine\\Instantiator\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator',
+        ),
+        'Doctrine\\Deprecations\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/deprecations/lib/Doctrine/Deprecations',
+        ),
+        'Doctrine\\DBAL\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/dbal/src',
+        ),
+        'Doctrine\\Common\\Cache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache',
+        ),
+        'Doctrine\\Common\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/event-manager/lib/Doctrine/Common',
         ),
         'DeepCopy\\' => 
         array (
