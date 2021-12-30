@@ -1,90 +1,30 @@
-name: Split Monorepo
-
+name: Split Test
 on:
   push:
     branches:
-      - main
+      - master
+    # see https://github.community/t/how-to-run-github-actions-workflow-only-for-new-tags/16075/10?u=tomasvotruba
     tags:
       - '*'
-
+  pull_request: null
+  release:
+    types: [created]
 jobs:
-  provide_packages_json:
-    # see json juggling: https://docs.github.com/en/free-pro-team@latest/actions/reference/context-and-expression-syntax-for-github-actions#example-6
-    # see https://stackoverflow.com/a/62953566/1348344
+  split_test:
     runs-on: ubuntu-latest
-
     steps:
       -
         uses: actions/checkout@v2
-
-      # required for matrix of packages set
-      -   uses: shivammathur/setup-php@v2
-          with:
-            php-version: 8.0
-            coverage: none
-
-      -   uses: "ramsey/composer-install@v1"
-
-      # get package json list
       -
-        id: output_data
-        run: echo "::set-output name=matrix::$(vendor/bin/monorepo-builder packages-json --exclude-package easy-coding-standard --exclude-package monorepo-builder --exclude-package config-transformer)"
-
-    # this step is needed, so the output gets to the next defined job
-    outputs:
-      matrix: ${{ steps.output_data.outputs.matrix }}
-
-  split_monorepo:
-    needs: provide_packages_json
-
-    runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        package: ${{fromJson(needs.provide_packages_json.outputs.matrix)}}
-
-    steps:
-      -   uses: actions/checkout@v2
-
-      - id: step1
-        uses: ASzc/change-string-case-action@v1
-        with:
-          string: ${{ matrix.package }}
-
-      - id: step2
-        run: echo "::set-output name=test::${{ steps.step1.outputs.capitalized }}"
-
-      # no tag
-      -
-        if: "!startsWith(github.ref, 'refs/tags/')"
-        # Uses an action in the root directory
-        name: Monorepo Split of ${{ steps.step2.outputs.test }}
-        uses: symplify/github-action-monorepo-split@2.0
+        # run action.yaml in the root directory
+        # see https://github.community/t/self-reference-an-action-for-testing/17891
+        uses: "./"
         env:
-          GITHUB_TOKEN: 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
+          GITHUB_TOKEN: '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a'
         with:
-          package-directory: 'Modules/${{ steps.step2.outputs.test }}'
-          split-repository-organization: 'snlprjti'
-          split-repository-name: '${{ steps.step2.outputs.test }}'
-          user-name: "snlprjti"
-          user-email: "snlprjpti@gmail.com"
-          branch: "main"
-
-
-      # with tag
-      -
-        if: "startsWith(github.ref, 'refs/tags/')"
-        # Uses an action in the root directory
-        name: Monorepo Tagged Split of ${{ steps.step2.outputs.test }}
-        uses: symplify/github-action-monorepo-split@2.0
-        env:
-          GITHUB_TOKEN: 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
-        with:
-          tag: ${GITHUB_REF#refs/tags/}
-
-          package-directory: 'Modules/${{ steps.step2.outputs.test }}'
-          split-repository-organization: 'snlprjti'
-          split-repository-name: '${{ steps.step2.outputs.test }}'
-          user-name: "snlprjti"
-          user-email: "snlprjpti@gmail.com"
-          branch: "main"
+          package_directory: 'packages/first-package'
+          repository_organization: 'snlprjti'
+          repository_name: 'new_split'
+          # change to use that should be signed under the split commit
+          user_name: 'snlprjti'
+          user_email: 'sl.prjpti@gmail.com'
