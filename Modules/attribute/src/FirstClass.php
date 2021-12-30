@@ -6,4 +6,8 @@ namespace Modules\attribute\src;
 
 final class FirstClass
 {
+    function a()
+    {
+        echo 2;
+    }
 }
