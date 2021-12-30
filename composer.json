@@ -16,7 +16,7 @@
     "autoload": {
         "psr-4": {
             "Sunil\\Laramono\\": "src/",
-            "packages\\attribute\\": "packages/attribute/src"
+            "Modules\\attribute\\": "Modules/attribute/src"
         }
     },
     "require-dev": {

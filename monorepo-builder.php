@@ -19,7 +19,7 @@ return static function (ContainerConfigurator $containerConfigurator): void {
     // for "merge" command
     $parameters->set(Option::PACKAGE_DIRECTORIES, [
         // default value
-        __DIR__ . '/packages',
+        __DIR__ . '/Modules',
     ]);
     $parameters->set(Option::DATA_TO_APPEND, [
         ComposerJsonSection::REQUIRE_DEV => [
