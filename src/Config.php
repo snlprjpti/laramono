@@ -54,6 +54,7 @@ final class Config
 
     public function getAccessToken(): string
     {
+        dd($this->accessToken);
         return $this->accessToken;
     }
 
