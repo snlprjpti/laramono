@@ -1,11 +1,11 @@
 {
-    "name": "your-monorepo/first-package",
+    "name": "snlprjti/attribute",
     "require": {
         "php": "^8.0.8"
     },
     "autoload": {
         "psr-4": {
-            "YourMonorepo\\FirstPackage\\": "src"
+            "packages\\first-package\\": "src"
         }
     }
 }

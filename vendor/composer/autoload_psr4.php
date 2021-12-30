@@ -7,8 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'phpDocumentor\\Reflection\\' => array($vendorDir . '/phpdocumentor/reflection-common/src', $vendorDir . '/phpdocumentor/reflection-docblock/src', $vendorDir . '/phpdocumentor/type-resolver/src'),
-    'YourMonorepo\\SecondPackage\\' => array($baseDir . '/packages/second-package/src'),
-    'YourMonorepo\\FirstPackage\\' => array($baseDir . '/packages/first-package/src'),
+    'packages\\first-package\\' => array($baseDir . '/packages/first-package/src'),
     'Webmozart\\Assert\\' => array($vendorDir . '/webmozart/assert/src'),
     'Symfony\\Polyfill\\Php81\\' => array($vendorDir . '/symfony/polyfill-php81'),
     'Symfony\\Polyfill\\Php80\\' => array($vendorDir . '/symfony/polyfill-php80'),

@@ -1,8 +1,0 @@
-{
-    "name": "your-monorepo/second-package",
-    "autoload": {
-        "psr-4": {
-            "YourMonorepo\\SecondPackage\\": "src"
-        }
-    }
-}

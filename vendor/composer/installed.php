@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'e6dcf142e23c262cd0cb194a7d3a522c07ba97a9',
+        'reference' => '0250a7f70b2aa39b9b303289c90c5dc8532121fa',
         'name' => 'snlprjti/laramono',
         'dev' => true,
     ),
@@ -337,13 +337,19 @@
             'reference' => 'c6c1022351a901512170118436c764e473f6de8c',
             'dev_requirement' => true,
         ),
+        'snlprjti/attribute' => array(
+            'dev_requirement' => false,
+            'replaced' => array(
+                0 => 'dev-master',
+            ),
+        ),
         'snlprjti/laramono' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'e6dcf142e23c262cd0cb194a7d3a522c07ba97a9',
+            'reference' => '0250a7f70b2aa39b9b303289c90c5dc8532121fa',
             'dev_requirement' => false,
         ),
         'symfony/dependency-injection' => array(
@@ -510,18 +516,6 @@
             'aliases' => array(),
             'reference' => '6964c76c7804814a842473e0c8fd15bab0f18e25',
             'dev_requirement' => true,
-        ),
-        'your-monorepo/first-package' => array(
-            'dev_requirement' => false,
-            'replaced' => array(
-                0 => '0.1.2',
-            ),
-        ),
-        'your-monorepo/second-package' => array(
-            'dev_requirement' => false,
-            'replaced' => array(
-                0 => '0.1.2',
-            ),
         ),
     ),
 );

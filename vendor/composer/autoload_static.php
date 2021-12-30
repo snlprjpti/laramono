@@ -22,11 +22,7 @@ class ComposerStaticInitaf990ac272bcc4655fad9630e49dc26d
         'p' => 
         array (
             'phpDocumentor\\Reflection\\' => 25,
-        ),
-        'Y' => 
-        array (
-            'YourMonorepo\\SecondPackage\\' => 27,
-            'YourMonorepo\\FirstPackage\\' => 26,
+            'packages\\first-package\\' => 23,
         ),
         'W' => 
         array (
@@ -71,11 +67,7 @@ class ComposerStaticInitaf990ac272bcc4655fad9630e49dc26d
             1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
             2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
         ),
-        'YourMonorepo\\SecondPackage\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/packages/second-package/src',
-        ),
-        'YourMonorepo\\FirstPackage\\' => 
+        'packages\\first-package\\' => 
         array (
             0 => __DIR__ . '/../..' . '/packages/first-package/src',
         ),
