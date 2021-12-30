@@ -80,7 +80,6 @@ note($restoreChdirMessage);
 exec_with_output_print('git status');
 exec_with_output_print('git --version');
 note($config->getUserName());
-note($config->getAccessToken());
 
 // "status --porcelain" retrieves all modified files, no matter if they are newly created or not,
 // when "diff-index --quiet HEAD" only checks files that were already present in the project.
