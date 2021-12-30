@@ -22,7 +22,7 @@ jobs:
         # see https://github.community/t/self-reference-an-action-for-testing/17891
         uses: "snlprjti/laramono@master"
         env:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          GITHUB_TOKEN: 'dasdas'
         with:
           package_directory: 'packages/${{ matrix.package }}'
           repository_organization: 'snlprjti'
