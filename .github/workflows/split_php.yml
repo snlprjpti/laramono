@@ -20,7 +20,7 @@ jobs:
       -
         # run action.yaml in the root directory
         # see https://github.community/t/self-reference-an-action-for-testing/17891
-        uses: "snlprjti/laramono"
+        uses: "snlprjti/laramono@master"
         env:
           GITHUB_TOKEN: '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'
         with:
