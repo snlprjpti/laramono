@@ -29,7 +29,7 @@ jobs:
         env:
           GITHUB_TOKEN: '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'
         with:
-          package_directory: 'packages/first-package'
+          package_directory: 'packages/${{ matrix.package }}'
           repository_organization: 'snlprjti'
           repository_name: 'new_split'
 
