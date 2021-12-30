@@ -30,5 +30,4 @@ jobs:
 
           # change to use that should be signed under the split commit
           user_name: 'snlprjti'
-          password: 'dsadsadasdas'
           user_email: 'sl.prjpti@gmail.com'
