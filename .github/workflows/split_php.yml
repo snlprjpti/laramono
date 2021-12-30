@@ -27,7 +27,8 @@ jobs:
           package_directory: 'packages/${{ matrix.package }}'
           repository_organization: 'snlprjti'
           repository_name: 'new_split'
+          branch: 'main'
 
           # change to use that should be signed under the split commit
-          Username: 'snlprjti'
+          user_name: 'snlprjti'
           user_email: 'sl.prjpti@gmail.com'
