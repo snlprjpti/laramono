@@ -3,7 +3,7 @@ name: Split
 on:
   push:
     branches:
-      - main
+      - master
     tags:
       - '*'
 
