@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace YourMonorepo\FirstPackage;
+namespace packages\attribute\src;
 
 final class FirstClass
 {
