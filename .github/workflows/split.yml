@@ -6,8 +6,6 @@ on:
       - main
     tags:
       - '*'
-env:
-  GITHUB_TOKEN: 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
 
 jobs:
   provide_packages_json:
@@ -62,7 +60,8 @@ jobs:
         # Uses an action in the root directory
         name: Monorepo Split of ${{ steps.step2.outputs.test }}
         uses: symplify/github-action-monorepo-split@2.0
-
+        env:
+          GITHUB_TOKEN: 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
         with:
           package-directory: 'Modules/${{ steps.step2.outputs.test }}'
           split-repository-organization: 'snlprjti'
@@ -79,7 +78,7 @@ jobs:
         name: Monorepo Tagged Split of ${{ steps.step2.outputs.test }}
         uses: symplify/github-action-monorepo-split@2.0
         env:
-          GITHUB_TOKEN: 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
+          GITHUB_TOKEN: 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
         with:
           tag: ${GITHUB_REF#refs/tags/}
 
