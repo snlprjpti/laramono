@@ -17,7 +17,7 @@ jobs:
 
     steps:
       -
-        uses: actions/checkout@v2
+        uses: actions/checkout
 
       # required for matrix of packages set
       -   uses: shivammathur/setup-php@v2
