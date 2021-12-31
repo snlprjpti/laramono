@@ -36,7 +36,10 @@
         "preferred-install": "dist",
         "sort-packages": true,
         "third-party/required-plugin": true,
-        "snlprjti/*": true
+        "snlprjti/*": true,
+        "symfony/dependency-injection": true,
+        "doctrine/dbal": true,
+        "symfony/http-kernel": true
     },
     "minimum-stability": "dev",
     "prefer-stable": true
