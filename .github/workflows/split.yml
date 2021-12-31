@@ -7,7 +7,7 @@ on:
     tags:
       - '*'
 env:
-  GITHUB_TOKEN: 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
+  GITHUB_TOKEN: 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
 
 jobs:
   provide_packages_json:
@@ -30,7 +30,7 @@ jobs:
       # get package json list
       -
         id: output_data
-        run: echo "::set-output name=matrix::$(vendor/bin/monorepo-builder packages-json)"
+        run: echo "::set-output name=matrix::$(vendor/bin/monorepo-builder packages-json --exclude-package easy-coding-standard --exclude-package monorepo-builder --exclude-package config-transformer)"
 
     # this step is needed, so the output gets to the next defined job
     outputs:
@@ -79,7 +79,7 @@ jobs:
         name: Monorepo Tagged Split of ${{ steps.step2.outputs.test }}
         uses: symplify/github-action-monorepo-split@2.0
         env:
-          GITHUB_TOKEN: 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
+          GITHUB_TOKEN: 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
         with:
           tag: ${GITHUB_REF#refs/tags/}
 
