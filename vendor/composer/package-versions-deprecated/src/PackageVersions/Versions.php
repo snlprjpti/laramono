@@ -65,6 +65,7 @@ final class Versions
   'phpdocumentor/reflection-docblock' => '5.3.0@622548b623e81ca6d78b721c5e029f4ce664f170',
   'phpdocumentor/type-resolver' => '1.5.1@a12f7e301eb7258bb68acd89d4aefa05c2906cae',
   'phpspec/prophecy' => 'v1.15.0@bbcd7380b0ebf3961ee21409db7b38bc31d69a13',
+  'phpstan/phpstan' => '0.12.99@b4d40f1d759942f523be267a1bab6884f46ca3f7',
   'phpunit/php-code-coverage' => '9.2.10@d5850aaf931743067f4bfc1ae4cbd06468400687',
   'phpunit/php-file-iterator' => '3.0.6@cf1c2e7c203ac650e352f4cc675a7021e7d1b3cf',
   'phpunit/php-invoker' => '3.1.1@5a10147d0aaf65b58940a0b72f71c9ac0423cc67',
@@ -90,8 +91,8 @@ final class Versions
   'symplify/monorepo-builder' => '10.0.6@f2c925f6bc521fcb30a2a52663393a76a62b34f9',
   'theseer/tokenizer' => '1.2.1@34a41e998c2183e22995f158c581e7b5e755ab9e',
   'webmozart/assert' => '1.10.0@6964c76c7804814a842473e0c8fd15bab0f18e25',
-  'snlprjti/attribute' => 'dev-main@8c0bc8dc55da53f7338de81d3bd257dfb3c4a894',
-  'snlprjti/laramono' => 'dev-main@8c0bc8dc55da53f7338de81d3bd257dfb3c4a894',
+  'snlprjti/attribute' => 'dev-main@ce6b7d2655159a00e72b7d5bc01f64ca4707488a',
+  'snlprjti/laramono' => 'dev-main@ce6b7d2655159a00e72b7d5bc01f64ca4707488a',
 );
 
     private function __construct()

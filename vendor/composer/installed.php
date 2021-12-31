@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '8c0bc8dc55da53f7338de81d3bd257dfb3c4a894',
+        'reference' => 'ce6b7d2655159a00e72b7d5bc01f64ca4707488a',
         'name' => 'snlprjti/laramono',
         'dev' => true,
     ),
@@ -143,6 +143,15 @@
             'install_path' => __DIR__ . '/../phpspec/prophecy',
             'aliases' => array(),
             'reference' => 'bbcd7380b0ebf3961ee21409db7b38bc31d69a13',
+            'dev_requirement' => true,
+        ),
+        'phpstan/phpstan' => array(
+            'pretty_version' => '0.12.99',
+            'version' => '0.12.99.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../phpstan/phpstan',
+            'aliases' => array(),
+            'reference' => 'b4d40f1d759942f523be267a1bab6884f46ca3f7',
             'dev_requirement' => true,
         ),
         'phpunit/php-code-coverage' => array(
@@ -409,7 +418,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '8c0bc8dc55da53f7338de81d3bd257dfb3c4a894',
+            'reference' => 'ce6b7d2655159a00e72b7d5bc01f64ca4707488a',
             'dev_requirement' => false,
         ),
         'symfony/dependency-injection' => array(

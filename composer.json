@@ -21,7 +21,8 @@
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5",
-        "symplify/monorepo-builder": "^10.0"
+        "symplify/monorepo-builder": "^10.0",
+        "phpstan/phpstan": "^0.12"
     },
     "replace": {
         "snlprjti/attribute": "self.version"
