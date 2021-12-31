@@ -14,6 +14,9 @@
         "doctrine/dbal": "^3.1",
         "symfony/http-kernel": "^5.0"
     },
+    "bin": [
+        "bin/monorepo-builder"
+    ],
     "autoload": {
         "psr-4": {
             "Modules\\attribute\\": "Modules/attribute"
