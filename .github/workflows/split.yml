@@ -14,13 +14,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      -
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
       # required for matrix of packages set
       -   uses: shivammathur/setup-php@v2
           with:
             php-version: 8.0
+            coverage: none
 
       -   uses: "ramsey/composer-install@v2"
 
@@ -40,7 +40,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        package:
+        package: ${{fromJson(needs.provide_packages_json.outputs.matrix)}}
 #
     steps:
       -   uses: actions/checkout@v2
