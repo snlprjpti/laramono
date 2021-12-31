@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - master
     tags:
       - '*'
 env:
@@ -15,9 +14,11 @@ jobs:
     # see json juggling: https://docs.github.com/en/free-pro-team@latest/actions/reference/context-and-expression-syntax-for-github-actions#example-6
     # see https://stackoverflow.com/a/62953566/1348344
     runs-on: ubuntu-latest
-
+  strategy:
+    fail-fast: false
+    matrix:
+      package: ${{fromJson(needs.provide_packages_json.outputs.matrix)}}
     steps:
-      -
         uses: actions/checkout@v2
 
       # required for matrix of packages set
@@ -41,10 +42,7 @@ jobs:
     needs: provide_packages_json
 
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        package: ${{fromJson(needs.provide_packages_json.outputs.matrix)}}
+
 
     steps:
       -   uses: actions/checkout@v2

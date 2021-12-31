@@ -1,0 +1,121 @@
+[33m745fcb8[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m 14
+[33md60fe75[m 14
+[33m6807b90[m 13
+[33m70864cf[m 12
+[33m85c196b[m 11
+[33m040ca16[m 11
+[33ma838044[m Update split.yml
+[33m39c8fc2[m Update split.yml
+[33meccf16d[m 10
+[33mb3d9807[m 9
+[33me114397[m 8
+[33m843ca32[m 7
+[33m5b3d6cd[m 6
+[33mce6b7d2[m 5
+[33mcd8338f[m 4
+[33mdf0cab4[m 3
+[33m8625899[m 2
+[33mcf1282f[m 1
+[33mc79454b[m da1244
+[33m6d4bbc4[m da5
+[33m276b521[m da1244
+[33m4c06c7c[m da124
+[33m2aa263a[m da123
+[33m8eaaca5[m da12
+[33m000474f[m da1
+[33me569017[m da
+[33m54fd1c4[m add doc1
+[33m8c0bc8d[m add doc
+[33m4d90cb5[m d brand4
+[33m3589c37[m d brand2
+[33md88daf6[m d brand1
+[33mb49aedd[m d brand
+[33ma5559de[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m Merge branch 'master' of https://github.com/snlprjti/laramono
+[33m749c0f9[m update nam1
+[33m92f8d06[m Create README.md
+[33md11274d[m update name
+[33m99dc8a1[m das
+[33m41d9c9e[m das
+[33m37f94f9[m Create split.yml
+[33m44c28d2[m update new 1
+[33mb985d7a[m u1p
+[33mecbf2db[m up
+[33mb0237ef[m v4
+[33mfd7e5bb[m v3
+[33m6fbeb1e[m v2
+[33m76c7d29[m v1
+[33m76c95d9[m 9
+[33m40ea491[m 8
+[33mfa3bd2e[m 7
+[33m0250a7f[m 6
+[33mfcf9b18[m 5
+[33m0ff21ae[m 4
+[33m6202019[m 3
+[33me6dcf14[m 2
+[33m261a7fb[m 1
+[33ma78abc0[m update 15
+[33m2813345[m update 15
+[33mbf201d5[m update 14
+[33m8f3754c[m update 14
+[33mba309a5[m update 13
+[33m0719252[m update 12
+[33m6306732[m update 12
+[33mbb1bd54[m update 11
+[33mbf3ba9c[m update 10
+[33m57e8cb0[m update 9
+[33m9af1030[m update 8
+[33m3c73226[m update 7
+[33m7590d3b[m update 6
+[33m98d63b3[m update 5
+[33m31ff899[m update 4
+[33m9255033[m update 3
+[33m4d0eb30[m update 2
+[33m9a6e65e[m update 1
+[33m6d9d1e6[m update flow3
+[33m14ef979[m update flow2
+[33md1c1120[m update flow1
+[33mcf17624[m update flow1
+[33m3b3e54c[m update flow1
+[33m5879bad[m update flow1
+[33m76f2ecb[m update flow
+[33m6b74aec[m update flow
+[33m737fc91[m update flow
+[33mfff4fbc[m default branch changed
+[33mdfc2309[m default branch changed
+[33m5341d02[m default branch changed
+[33m641a31d[m renamed entry points
+[33m516264d[m add source
+[33mf34ac4c[m docker file
+[33m6a2a750[m misplace
+[33m38f9404[m file name changed
+[33m2652068[m update token
+[33m3a545bf[m update token
+[33m78c7df6[m update token
+[33m39973f7[m update token
+[33m88639ce[m update token
+[33mdcf771d[m update token
+[33m4f5834b[m update token
+[33m64e88f4[m Create split_php.yml
+[33m60016ec[m das
+[33m1f2b2b1[m das
+[33m9aad9fe[m Merge branch 'master' of https://github.com/snlprjti/laramono into main
+[33mc641ab8[m update token
+[33m4b9af0e[m update token
+[33m5d1b775[m update token
+[33mb86501d[m update token
+[33m914a343[m revert token
+[33md23f0ce[m update token
+[33m40f31e3[m add description
+[33m2b30357[m das
+[33m18cd1b0[m das
+[33mfdb7a9d[m Create php.yml
+[33m816fab9[m Merge pull request #1 from snlprjti/main
+[33m1f14232[m open 0.2-dev
+[33m8020315[m[33m ([m[1;33mtag: 0.1.3[m[33m)[m prepare release
+[33m31e3913[m open 0.2-dev
+[33mf2944fc[m[33m ([m[1;33mtag: 0.1.2[m[33m)[m prepare release
+[33m086ad63[m open 0.2-dev
+[33mfdf5065[m[33m ([m[1;33mtag: 0.1.1[m[33m)[m prepare release
+[33mad8b89e[m open 0.2-dev
+[33m0b308ab[m[33m ([m[1;33mtag: v0.1.0[m[33m)[m prepare release
+[33m167f280[m first commit
