@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'a4e9bfd084c34a97dd6cc8647f4f06e5291888e1',
+        'reference' => '5f84225402c3d5d460fda118da235c6a28ad4073',
         'name' => 'snlprjti/laramono',
         'dev' => true,
     ),
@@ -418,7 +418,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'a4e9bfd084c34a97dd6cc8647f4f06e5291888e1',
+            'reference' => '5f84225402c3d5d460fda118da235c6a28ad4073',
             'dev_requirement' => false,
         ),
         'symfony/dependency-injection' => array(

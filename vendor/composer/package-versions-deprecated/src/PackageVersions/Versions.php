@@ -91,8 +91,8 @@ final class Versions
   'symplify/monorepo-builder' => '10.0.6@f2c925f6bc521fcb30a2a52663393a76a62b34f9',
   'theseer/tokenizer' => '1.2.1@34a41e998c2183e22995f158c581e7b5e755ab9e',
   'webmozart/assert' => '1.10.0@6964c76c7804814a842473e0c8fd15bab0f18e25',
-  'snlprjti/attribute' => 'dev-main@a4e9bfd084c34a97dd6cc8647f4f06e5291888e1',
-  'snlprjti/laramono' => 'dev-main@a4e9bfd084c34a97dd6cc8647f4f06e5291888e1',
+  'snlprjti/attribute' => 'dev-main@5f84225402c3d5d460fda118da235c6a28ad4073',
+  'snlprjti/laramono' => 'dev-main@5f84225402c3d5d460fda118da235c6a28ad4073',
 );
 
     private function __construct()

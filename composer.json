@@ -17,6 +17,7 @@
     "bin": [
         "bin/monorepo-builder"
     ],
+
     "autoload": {
         "psr-4": {
             "Modules\\attribute\\": "Modules/attribute"
