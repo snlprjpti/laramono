@@ -34,7 +34,9 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true
+        "sort-packages": true,
+        "third-party/required-plugin": true,
+        "snlprjti/*": true
     },
     "minimum-stability": "dev",
     "prefer-stable": true
